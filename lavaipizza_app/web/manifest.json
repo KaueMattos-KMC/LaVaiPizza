@@ -1,11 +1,11 @@
 {
-    "name": "lavaipizza_app",
-    "short_name": "lavaipizza_app",
+    "name": "LaVaiPizza",
+    "short_name": "LaVaiPizza",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#B35400",
+    "theme_color": "#B35400",
+    "description": "App da pizzaria LaVaiPizza: cardápio, pedido e acompanhamento.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
