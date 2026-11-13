@@ -7,6 +7,7 @@ import '../services/api_service.dart';
 import '../theme.dart';
 import '../utils/formato.dart';
 import '../widgets/componentes.dart';
+import 'entregador_login_screen.dart';
 import 'pizza_detalhe_sheet.dart';
 import 'servidor_screen.dart';
 
@@ -428,6 +429,13 @@ class _Rodape extends StatelessWidget {
         const SizedBox(height: 12),
         const Text('Rua das Pizzas, 123 - São Paulo/SP | (11) 9999-9999', textAlign: TextAlign.center, style: estilo),
         const SizedBox(height: 16),
+        TextButton.icon(
+          onPressed: () =>
+              Navigator.push(context, MaterialPageRoute(builder: (_) => const EntregadorLoginScreen())),
+          style: TextButton.styleFrom(foregroundColor: Colors.white70, minimumSize: const Size(48, 48)),
+          icon: const Icon(Icons.delivery_dining_outlined, size: 18),
+          label: const Text('Área do entregador', style: TextStyle(decoration: TextDecoration.underline)),
+        ),
         TextButton.icon(
           onPressed: aoConfigurarServidor,
           style: TextButton.styleFrom(foregroundColor: Colors.white70, minimumSize: const Size(48, 48)),
